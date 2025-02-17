@@ -1,0 +1,99 @@
+/* Estilos generales */
+.background-image {
+    background-image: url('core/static/images/museo_ini.jpg'); /* Asegúrate de que la ruta aquí sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+body {
+    color: aliceblue;
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/museo_ini.jpg'); /* Ajustar la ruta según la estructura */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #333333cf; /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de la tarjeta */
+.card {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulario */
+.form-content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.btn-submit {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    border-radius: 5px; /* Borde redondeado */
+}
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    background-color: #afa67d;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffffff;
+}
+
+/* Línea separadora */
+hr {
+    border: 0;
+    border-top: 1px solid aliceblue;
+    margin: 20px 0;
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+/* Enlaces */
+.register-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+}

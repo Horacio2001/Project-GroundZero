@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'core/css/register.css' %}">
+    
+    <link href="{% static 'core/css/menuMobile.css'%}" rel="stylesheet">
+    <title>Ingreso</title>
+</head>
+
+<body class="body2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>INGRESA TUS DATOS</h2>
+                        <hr>
+                        <br>
+                        <form class="form-content" method="POST">
+                            {% csrf_token %}
+                            {{ form }}
+                            <br>
+                            <input type="submit" value="Ingresar" class="btn-submit">
+                        </form>
+                        <hr>
+                        <p>¿No tienes una cuenta? <a href="{% url 'register' %}" class="register-link">Regístrate aquí</a>.</p>
+                        <p>¿Olvidaste tú contraseña? <a href="{% url 'password_reset' %}" class="register-link">Recuperar</a>.</p>
+                        <a class="register-link" href="{% url 'index' %}">Volver al menú</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="{% static 'core/js/jquery.min.js'%}"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="{% static 'core/js/bootstrap.min.js'%}"></script>
+<script src="{% static 'core/js/jquery.easing.min.js'%}"></script>
+<script src="{% static 'core/js/jquery.stellar.js'%}"></script>
+<script src="{% static 'core/js/jquery.appear.js'%}"></script>
+<script src="{% static 'core/js/jquery.nicescroll.min.js'%}"></script>
+<script src="{% static 'core/js/jquery.countTo.js'%}"></script>
+<script src="{% static 'core/js/jquery.shuffle.modernizr.js'%}"></script>
+<script src="{% static 'core/js/jquery.shuffle.js'%}"></script>
+<script src="{% static 'core/js/owl.carousel.js'%}"></script>
+<script src="{% static 'core/js/jquery.ajaxchimp.min.js'%}"></script>
+<script src="{% static 'core/js/script.js'%}"></script>
+<script src="{% static 'core/js/funcionalidades.js'%}"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{% static 'core/js/Eliminar.js'%}"></script>
+
+</body>
+</html>
